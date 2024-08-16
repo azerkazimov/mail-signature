@@ -1,0 +1,126 @@
+.generator {
+
+
+    &_banner {
+
+
+        &_left {
+            border-radius: 12px;
+
+            .react-tel-input {
+                position: relative;
+                height: 55px;
+
+                input {
+                    height: 100%;
+                }
+
+                .flag-dropdown {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                }
+            }
+
+            .text {
+                background-color: map-get($colors, natural);
+                border-radius: 12px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px 10px;
+            }
+
+            .templateX {
+                background-color: map-get($colors, natural);
+                border-radius: 12px;
+
+                &-headers {
+                    gap: 50px;
+
+                    li {
+                        cursor: pointer;
+                        user-select: none;
+                    }
+
+                    .active-category {
+                        transition: all 0.2s ease;
+                        color: map-get($colors, secondary);
+                    }
+                }
+
+                .design-container {
+                    gap: 10px;
+                    width: 100%;
+
+
+                    img {
+                        width: 25px;
+                        height: 25px;
+                        cursor: pointer;
+                        user-select: none;
+                    }
+
+                    .font-color,
+                    .background-color {
+                        gap: 10px;
+                    }
+
+                    .colors-pallete {
+                        @extend .flex-container;
+                        gap: 10px;
+
+                        .color {
+                            cursor: pointer;
+                            user-select: none;
+                            border-radius: 50%;
+                            width: 24px;
+                            height: 24px;
+                            background-color: map-get($colors, primary);
+                        }
+                    }
+                }
+            }
+
+            .temp_wrap {
+                width: 47%;
+                border-radius: 25px;
+                height: 30px;
+            }
+        }
+
+        &_right {
+            @extend .p-5;
+            background-color: map-get($colors, natural);
+            border-radius: 12px;
+            flex-grow: 1;
+
+            .right-img {
+
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .btn_email {
+            border-radius: 8px;
+        }
+
+        .url-container {
+            width: 100%;
+
+            .url-sosial {
+                gap: 10px;
+
+                input {
+                    width: 100%;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+    }
+
+}

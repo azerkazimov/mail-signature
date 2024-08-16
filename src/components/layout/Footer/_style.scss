@@ -1,0 +1,10 @@
+footer {
+    background-color: map-get($colors, primary10);
+
+    ul {
+        li {
+            @extend .font-size-16;
+            @extend .text-natural;
+        }
+    }
+}
