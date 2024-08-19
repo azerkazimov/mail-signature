@@ -1,12 +1,10 @@
-export const BASE_URL = 'https://signature.redmark.az';
+export const BASE_URL = "https://signature.redmark.az";
 
 export const AUTH_KEY = {
-  register: '/Accout/Register',
-  login: '/Login/Register',
+  register: "/Accout/Register",
+  login: "/Account/Login/",
 };
 
 export const CACHE_KEY = {
-  userInfo: 'userInfo',
+  userInfo: "userInfo",
 };
-
-

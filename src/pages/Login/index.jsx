@@ -37,12 +37,10 @@ const Login = () => {
     },
     onSubmit: async (values, actions) => {
       try {
-        const response = await apiController.post(
-          apiEndpoints.post("/Account/Login"),
-          values
-        );
+        const response = await apiController.post("/Account/Login", values);
+        console.log("response", response);
 
-        if (response.auth) {
+        if (response.success) {
           actions.resetForm();
           dispatch(login(response.user));
           showAlert("success", response.message);
@@ -70,7 +68,7 @@ const Login = () => {
 
             <div className="login">
               <span>Do not have an account? - </span>
-              <Link to={"/signup"}>Sign Up</Link>
+              <Link to={"/sign-up"}>Sign Up</Link>
             </div>
             <form onSubmit={formik.handleSubmit}>
               <div className="form-group">
