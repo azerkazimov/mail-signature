@@ -1,0 +1,39 @@
+.brands {
+  margin-bottom: 50px;
+  .brands-logo {
+    @extend .flex-container;
+    margin-top: 25px;
+    .logo {
+      // @extend .my-3;
+      @extend .flex-container;
+      @extend .flex-align-center;
+
+      img {
+        max-width: 100px;
+        object-fit: cover;
+        color: black;
+      }
+    }
+  }
+  .btn_now {
+    width: 35%;
+    margin-bottom: 35px;
+  }
+  .left_brand {
+    h1 {
+      width: 80%;
+    }
+  }
+  .right_brands {
+    width: 33%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .logo {
+    margin: 20px auto;
+  }
+}

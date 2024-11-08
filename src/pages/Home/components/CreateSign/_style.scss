@@ -1,0 +1,216 @@
+.create-banners {
+  @extend .flex-container;
+  @extend .flex-column;
+  margin-bottom: 130px;
+  .banners_items {
+    @extend .flex-container;
+    @extend .flex-column;
+    gap: 72px;
+    padding: 0 40px;
+    overflow: hidden;
+
+    .bn_wrap {
+      background-color: #adcbf2;
+      padding: 13px 22px;
+      width: fit-content;
+      border-radius: 122px;
+      position: relative;
+      margin: 0 auto;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 2px;
+        height: 72px;
+        background-color: #1a73e8;
+        transform: translateX(-50%);
+      }
+    }
+
+    .bns_wrap {
+      position: relative;
+      margin: 0 auto;
+      display: inline-block;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 98%;
+        left: 50%;
+        width: 2px;
+        height: 63px;
+        padding-bottom: 10px;
+        background-color: #1a73e8;
+        transform: translateX(-50%);
+      }
+    }
+
+    .banners_wrap {
+      @extend .flex-container;
+      @extend .flex-column;
+      max-width: 1336px;
+      background-color: #ffffff;
+      border-radius: 18px;
+      padding: 40px 32px;
+      position: relative;
+      border: 2px solid #1a73e875;
+
+      button {
+        @extend .font-size-22;
+        @extend .font-weight-500;
+        border: 2px solid map-get($colors, primary);
+        border-radius: 122px;
+        background-color: #a3c7f6;
+        border-color: transparent;
+        color: map-get($colors, primary);
+        min-height: 55px;
+        padding: 13px 34px;
+
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease;
+
+        &:hover {
+          background-color: map-get($colors, primary);
+          color: #ffffff;
+        }
+      }
+
+      .banners_title {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        .banner_title_design {
+          background-color: #fafafa;
+          height: 336px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 32px;
+          border-radius: 9px;
+          flex: 1 1 300px;
+        }
+        .banner_last {
+          height: 500px;
+        }
+        .banner_title_integrate {
+          background-color: #fafafa;
+          position: relative;
+          flex: 1 1 300px;
+        }
+
+        .banner_integrate {
+          padding: 56px 32px;
+        }
+
+        .banner_integrate_image {
+          padding: 44px 40px;
+        }
+
+        .banner_right {
+          background-color: #fafafa;
+          padding: 51px 31px;
+          border-radius: 9px;
+          flex: 1 1 300px;
+        }
+
+        h2 {
+          @extend .font-size-24;
+          @extend .font-weight-500;
+          color: #1a73e8;
+        }
+
+        p {
+          @extend .font-size-18;
+          @extend .font-weight-400;
+          color: map-get($colors, text30);
+          line-height: 1.55;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        .gif {
+          width: 100px;
+
+          img {
+            width: 341px;
+            height: auto;
+          }
+        }
+
+        .gif1 {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .gif2 {
+          position: absolute;
+          right: 5px;
+        }
+
+        .gif3 {
+          position: absolute;
+          right: 50px;
+        }
+      }
+
+      &:last-child {
+        img {
+          position: absolute;
+          width: auto;
+          right: 0;
+        }
+      }
+    }
+
+    .banner_line {
+      width: 100%;
+      transform: translateX(110px);
+
+      img {
+        width: 100%;
+        border-radius: 9px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banners_wrap {
+    .banners_title {
+      text-align: center;
+      gap: 40px;
+
+      .banner_title_design,
+      .banner_title_integrate,
+      .banner_right {
+        flex: 1 1 100%;
+      }
+    }
+
+    &:last-child {
+      img {
+        position: relative !important;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .banner_line {
+    transform: translateX(50px) !important;
+  }
+}

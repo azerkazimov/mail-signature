@@ -1,0 +1,26 @@
+form {
+  @extend .flex-container;
+  @extend .flex-column;
+  gap: 20px;
+}
+
+.form-group {
+  @extend .flex-container;
+  @extend .flex-column;
+  gap: 10px;
+
+  span {
+    user-select: none;
+  }
+}
+
+.form-control {
+  border: 1px solid map-get($colors, text30);
+  border-radius: 4px;
+  padding: 12px;
+  transition: all 0.2s ease;
+
+  &:focus {
+    border: 1px solid map-get($colors, primary);
+  }
+}

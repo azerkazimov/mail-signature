@@ -1,0 +1,21 @@
+.explore_head {
+  display: none;
+  .explore {
+    margin: 0 auto;
+    text-align: center;
+    &-templates {
+      margin-top: 40px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+      }
+    }
+    button {
+      padding: 16px 40px;
+      border-radius: 8px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+  }
+}

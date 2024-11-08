@@ -1,0 +1,33 @@
+.temp9_head {
+  display: flex;
+  // justify-content: space-between;
+  gap: 43px;
+  flex-wrap: nowrap !important;
+}
+.template_dam9 {
+  width: 60%;
+
+  background-color: #ffffff;
+  padding: 32px;
+  margin: 50px auto;
+}
+.temp9_attend {
+  background-color: #fcbf49;
+  border-radius: 8px;
+  padding: 27px;
+  margin-top: 40px;
+  p {
+    line-height: 20px;
+  }
+  .temp9_button {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    button {
+      color: #f77f00;
+      width: 20%;
+      padding: 10px 0;
+      border-radius: 4px;
+    }
+  }
+}

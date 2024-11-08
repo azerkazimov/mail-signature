@@ -1,0 +1,37 @@
+.trial_head {
+  margin-bottom: 130px;
+  .trial {
+    h2 {
+      line-height: 36px;
+    }
+
+    p {
+      line-height: 31px;
+    }
+
+    button {
+      padding: 16px 82px;
+      border-radius: 8px;
+      line-height: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  .trial_title {
+    position: relative;
+  }
+  .free {
+    width: 303px;
+    position: absolute;
+    right: 230px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .trial {
+    gap: 50px;
+    text-align: center;
+  }
+}

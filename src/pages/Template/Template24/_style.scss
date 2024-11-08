@@ -1,0 +1,15 @@
+.temp24 {
+  background-image: url("../../../assets/images/templateBanner/temp7.png");
+  width: 60%;
+  height: 300px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  position: relative;
+  .temp24_hero {
+    position: absolute;
+    left: 150px;
+    display: flex;
+    bottom: 10px;
+    gap: 18px;
+  }
+}

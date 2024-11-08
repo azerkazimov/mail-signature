@@ -1,0 +1,107 @@
+// colums quantity
+$grid-columns: 12;
+
+// width varaibles
+$widths: 0%, 25%, 50%, 75%, 100%;
+
+// breakpoints for responsive
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+// spacers margins and padding
+$spacer: 5px;
+$spacers: (
+  0: (
+    $spacer * 0,
+  ),
+  1: (
+    $spacer * 1,
+  ),
+  2: (
+    $spacer * 2,
+  ),
+  3: (
+    $spacer * 3,
+  ),
+  4: (
+    $spacer * 4,
+  ),
+  5: (
+    $spacer * 5,
+  ),
+  6: (
+    $spacer * 6,
+  ),
+  7: (
+    $spacer * 7,
+  ),
+  8: (
+    $spacer * 8,
+  ),
+  9: (
+    $spacer * 9,
+  ),
+  10: (
+    $spacer * 10,
+  ),
+);
+
+// page main colors
+$colors: (
+  "background": #f7f7f7,
+  "natural": #fff,
+  "inky": #000000,
+  "primary": #1a73e8,
+  "primary10": #2e75d4,
+  "primary30": #5e9def,
+  "primary30d": #1251a3,
+  "primary60": #a3c7f6,
+  "primary60d": #0a2e5d,
+  "primary90": #cde0fa,
+  "primaryFAQ": #eff5fd,
+  "primaryItem": #dae7fb,
+  "access": #34a853,
+  "secondary": #fb7701,
+  "danger": #d9534f,
+  "silvery": #eff5fd,
+  "light": #adadad,
+  "light10": #f1f1f1,
+  "light30": #9c9c9c,
+  "light60": #dddddd,
+  "lightGray10": #e4e7ec,
+  "lightGray20": #dde3f6,
+  "lightGray30": #cfcfcf,
+  "lightGray40": #f3f0f0,
+  "lightGray50": #dedede,
+  "lightGray60": #f6f6f6,
+  "text": #3c3c3c,
+  "text5": #434343,
+  "text10": #4f4f4f,
+  "text30": #767676,
+  "text52": #a2a2a2,
+  "text60": #b1b1b1,
+);
+
+$offset-values: 1, 2, 3, 4, 5;
+
+// generate font varaibles from 10 till 100
+$font-sizes: ();
+
+@for $i from 10 through 100 {
+  $font-sizes: map-merge($font-sizes, (#{$i}: #{$i}px));
+}
+
+$font-weights: (
+  lighter: lighter,
+  light: 300,
+  normal: normal,
+  bold: bold,
+  bolder: bolder,
+);
+
+$flex-values: (start, end, center, space-between, space-around, space-evenly);

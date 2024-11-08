@@ -1,0 +1,37 @@
+.temp_18 {
+  background-image: url("../../../assets/images/templateBanner/temp6.png");
+  width: 60%;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #034364;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .temp_hero18 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .joinhead_btn {
+      margin: 60px 0;
+      .join_btn {
+        color: #033f5e;
+        background-color: #fff;
+        padding: 10px 25px;
+        border-radius: 8px;
+      }
+    }
+  }
+  .temp18_hero {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 25px;
+  }
+  .influcer {
+    padding-bottom: 80px;
+  }
+}

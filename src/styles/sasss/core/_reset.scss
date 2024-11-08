@@ -1,0 +1,37 @@
+// //  reset default css properties
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Oswald:wght@400;700&family=PT+Sans:wght@400;700&family=Quicksand:wght@400;700&family=Work+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://v1.fontapi.ir/css/SFProDisplay:100;200;300;400;500;600;700;800;900");
+@import url("https://fonts.googleapis.com/css2?family=Belgrano&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  border: none;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: map-get($colors, background);
+  position: relative;
+}
+
+main {
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}

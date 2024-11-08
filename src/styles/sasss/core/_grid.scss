@@ -1,0 +1,68 @@
+// generate flex colums
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    width: calc((100% / 12) * #{$i});
+  }
+}
+
+.relative {
+  position: relative !important;
+}
+
+// wrapper
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  padding: 0 70px;
+}
+
+.row {
+  display: flex !important;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.col {
+  flex: 0 0 100%;
+  max-width: 100%;
+
+  @media (min-width: 576px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  @media (min-width: 768px) {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+// generate responsive flex colums
+@each $breakpoint, $value in $breakpoints {
+  @media (min-width: $value) {
+    @for $i from 1 through $grid-columns {
+      .col-#{$breakpoint}-#{$i} {
+        width: calc((100% / #{$grid-columns}) * #{$i});
+      }
+    }
+  }
+}
